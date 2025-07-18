@@ -1,0 +1,229 @@
+@import url('../../GeneralStyle/generalStyle.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.home-page-container{
+    display: flex;
+    
+}
+.contacts-container{
+    background-color: #161717;
+    width: 30%;
+    height: 800px;
+    border: solid 1px #3b3c3c;
+    padding-left: 18px;
+    padding-right: 20px;
+    
+}
+.header_logo-menu{
+    width: 100%;
+    height: 50px; 
+    display: flex;
+    justify-content: space-between;
+    padding:30px 0px 30px 0px;
+    align-items: center;
+}
+.logo{
+    
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+    
+}
+.new-chat-menu-container{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-chat:hover {
+    background-color: rgb(39, 39, 39);
+    opacity: 5.9;  
+    border-radius: 50px;
+    
+    
+}
+
+.button-chat{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.new-chat-menu-container .button-chat .bi-envelope-plus{
+    font-size: 18px;
+    color:white;
+    cursor:pointer;
+    text-align: center;
+   
+    
+}
+.button-menu:hover {
+    background-color: rgb(39, 39, 39);
+    opacity: 5.9;  
+    border-radius: 50px;
+}
+.button-menu{
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.new-chat-menu-container .button-menu .bi-three-dots-vertical{
+    font-size: 18px;
+    color:white;
+    cursor:pointer;
+    text-align: center;
+   
+}
+.search-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #313131;
+    border: none;
+    border-radius: 20px;
+    
+   
+    
+}
+.search-icon{
+    color: #999797;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 18px;
+    padding-left: 28px;   
+}
+.search-input{
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding-left: 40px;
+   
+    
+    
+}
+.search-input:hover{
+    border: solid 1px #444343;
+    
+
+    
+}
+.search-input::placeholder {
+  color: #999797;
+}
+
+.buttons-header{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    gap:8px;    
+}
+.buttons-header button:hover {
+    background-color: rgb(54, 54, 54);
+    opacity: 9.9; 
+    border-radius: 50px;
+    
+    
+}
+.buttons-header button{
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    border:solid 1px rgb(53, 52, 52);
+    border-radius: 15px;
+    color:#999797
+}
+
+.button_all-chats{
+    width: 62px;
+    cursor:pointer;
+}
+
+.button_unread{
+    width: 78px;
+    cursor:pointer;
+}
+.button_favorites{
+    width: 78px;
+    cursor:pointer;
+}
+.button_groups{
+    width: 62px;
+    cursor:pointer;
+}
+.chats-panel{
+    background-color: transparent ;
+    width: 100%;
+    padding-top: 20px
+   
+}
+.contact{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    cursor:pointer;
+    display:flex;
+    flex-direction: row-reverse; 
+    justify-content: start;
+    align-items: center;
+    color: white;
+    gap:15px;
+    padding: 10px;
+}
+.name-contact-container{
+   display: flex;
+    flex-direction: column;
+    justify-content: start;
+   padding-top: 5px;
+    height: 100%;
+}
+.profile-photo-container{
+    height: 100%;
+}
+.profile-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.contact:hover {
+    background-color: rgb(54, 54, 54);
+    opacity: 9.9; 
+    border-radius: 10px;
+    
+    
+}
+.icons-container{
+    width: 60px;
+    height: 800px;
+    background-color: #1d1f1f;
+   
+}
+
+
+.img-container{
+    background-image: url("../../IMG/fondo-wpp.png");
+    width: 66%;
+    
+}
+
+

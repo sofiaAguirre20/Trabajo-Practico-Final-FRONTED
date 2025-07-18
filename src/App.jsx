@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import InicioChats from './Components/InicioChats/InicioChats'
+import HomePageContacts from './Components/HomePageContacts/HomePageContacts'
+import { Route, Routes } from 'react-router'
 
 
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
       <div>
-        <InicioChats/>
+        <HomePageContacts/>
       </div>
        
   )
