@@ -223,6 +223,7 @@
 .img-container{
     background-image: url("../../IMG/fondo-wpp.png");
     width: 66%;
+    /* visibility: hidden */
     
 }
 

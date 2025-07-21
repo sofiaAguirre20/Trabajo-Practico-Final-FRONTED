@@ -7,6 +7,9 @@ import { Route, Routes } from 'react-router'
 
 const HomePageContacts = () => {
     const contacts = getContactList()
+
+    
+    
     return (
         <div className='home-page-container'>
             <section className='icons-container'>
@@ -34,7 +37,7 @@ const HomePageContacts = () => {
                     <div className='buttons-header'>
                         <button className='button_all-chats'>Todos</button>
                         <button className='button_unread'>No leídos</button>
-                        <button className='button_favorites' >Favoritos</button>
+                        <button className='button_favorites'>Favoritos</button>
                         <button className='button_groups'>Grupos</button>
                     </div>
                 </div>
@@ -42,8 +45,8 @@ const HomePageContacts = () => {
                     <ContactsList contacts={contacts}/>
                 </div>
             </section>
-
-            <section className='img-container'>
+            
+            <section className='img-container' >
 
             </section>
         </div>
