@@ -13,7 +13,8 @@ const MessagesScreen =()=>{
 	const contact_selected = getContactById(contact_id)
 
 	
-    const [messages, setMessages] = useState(contact_selected.messages)
+    const [messages, setMessages] = useState(contact_selected)
+
 
     const deleteMessageById = (message_id) => {
         const new_message_list = []

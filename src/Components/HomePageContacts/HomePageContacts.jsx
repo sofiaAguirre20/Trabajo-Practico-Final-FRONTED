@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './HomePageContacts.css'
-import { getContactList } from '../../services/contactServices'
+import { getContactById, getContactList } from '../../services/contactServices'
 import ContactsList from '../ContactsList/ContactsList'
-import { Route, Routes } from 'react-router'
+import { Route, Routes, useParams } from 'react-router'
 
 
 const HomePageContacts = () => {
     const contacts = getContactList()
-
+    const [showWhappImg, setShowWhappImg] = useState(true)
     
     
     return (
@@ -42,13 +42,13 @@ const HomePageContacts = () => {
                     </div>
                 </div>
                 <div className='chats-panel'>
-                    <ContactsList contacts={contacts}/>
+                    <ContactsList contacts={contacts} setShowWhappImg={setShowWhappImg}/>
                 </div>
             </section>
+            {showWhappImg && <section className='img-container' >  </section>}
             
-            <section className='img-container' >
 
-            </section>
+           
         </div>
     )
 }
