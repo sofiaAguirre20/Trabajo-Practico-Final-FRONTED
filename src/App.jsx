@@ -1,30 +1,35 @@
-import { useState } from 'react'
-import HomePageContacts from './Components/HomePageContacts/HomePageContacts'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router'
-import MessagesScreen from './Screens/MessagesScreen/MessagesScreen'
-import ContactItem from './Components/ContactItem/ContactItem'
+ import MessagesScreen from './Screens/MessagesScreen/MessagesScreen'
+ import ContactItem from './Components/ContactItem/ContactItem'
+import NoContactSelected from './Screens/NoContactSelected/NoContactSelected'
+import SideBarContacts from './Screens/SideBarContacts/SideBarContacts'
+
 
 
 
 function App() {
-
+ 
   return (
-      <div>
-        <Routes>
+      <div className='container'>
+          <SideBarContacts/> 
+          <NoContactSelected/>
+         <Routes>
+           
             <Route
               path='/'
-              element={<HomePageContacts/>}
+              element={<SideBarContacts/>}
             />
             <Route
             path='/' element={<ContactItem/>}
             />
-            <Route
+            {/* <Route
               path='/contact/:contact_id/messages' 
               element={<MessagesScreen/>}
-            />
+            /> */}
             
 
-        </Routes>
+        </Routes> 
         
       </div>
        

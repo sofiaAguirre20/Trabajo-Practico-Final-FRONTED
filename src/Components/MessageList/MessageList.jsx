@@ -2,6 +2,7 @@ import React from 'react'
 import Message from '../Message/Message'
 
 const MessageList = ({messages}) =>{
+  console.log(messages)
   const lista_mensajes = messages.map(
     (message) => {
       return(

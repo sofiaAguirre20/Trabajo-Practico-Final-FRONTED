@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MessageList from '../../Components/MessageList/MessageList'
 import { Link, NavLink, useParams } from 'react-router'
 import { getContactById } from '../../services/contactServices'
 import '../../Components/Message/Message.css'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
+import SideBarContacts from '../SideBarContacts/SideBarContacts'
 
 const MessagesScreen =()=>{
     
@@ -13,8 +14,11 @@ const MessagesScreen =()=>{
 	const contact_selected = getContactById(contact_id)
 
 	
-    const [messages, setMessages] = useState(contact_selected)
-
+    const [messages, setMessages] = useState([])
+    useEffect(
+        ()=>{
+            setMessages(contact_selected.messages)
+        },[contact_id])
 
     const deleteMessageById = (message_id) => {
         const new_message_list = []
@@ -31,14 +35,14 @@ const MessagesScreen =()=>{
 		
 		const new_mesage = {
 			emisor: 'YO',
-			hora: '11:10', //Investigar acerca de Date.
+			hora: '11:10', 
 			texto: text,
 			status: 'no-visto',
 			id: messages.length + 1
 		}
-		//Clonar la lista de mensajes (Porque: El clon al ser otra variable PERO NO UN ESTADO si lo vamos a poder mutar)
+		
 		const cloned_messages_list = [...messages]
-		//Este push es valido porque no estamos mutando en estado 'messages' sino mas bien el clon de ese estado
+		
 		cloned_messages_list.push(new_mesage)
 		setMessages(cloned_messages_list)
 	}
@@ -47,10 +51,13 @@ const MessagesScreen =()=>{
     return(
         <div className='chat-container'>
            
-            <h1>Mensajes</h1>
-            <MessageList messages = {messages}/>
+            
+            {
+                setMessages && <MessageList messages = {messages}/> 
+            }
+             
             {/*<button onClick = {() => deleteMessageById(1)}>Eliminar Mensaje</button>*/}
-            <NewMessageForm addNewMessage={addNewMessage}/>
+            {/* <NewMessageForm addNewMessage={addNewMessage}/> */}
            
            
         </div>
