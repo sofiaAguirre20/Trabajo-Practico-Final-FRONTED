@@ -32,10 +32,12 @@ const MessagesScreen =()=>{
     }
 
     const addNewMessage = (text) => {
-		
+		 const fechaActual = new Date();
+        const hour = fechaActual.getHours();
+        const minutes = fechaActual.getMinutes();
 		const new_mesage = {
 			emisor: 'YO',
-			hora: '11:10', 
+			hora: [hour,minutes], 
 			texto: text,
 			status: 'no-visto',
 			id: messages.length + 1
@@ -59,8 +61,8 @@ const MessagesScreen =()=>{
             }
            
             {/*<button onClick = {() => deleteMessageById(1)}>Eliminar Mensaje</button>*/}
-            {/* <NewMessageForm addNewMessage={addNewMessage}/> */}
-           
+             <NewMessageForm addNewMessage={addNewMessage}/>
+        
            
         </div>
         

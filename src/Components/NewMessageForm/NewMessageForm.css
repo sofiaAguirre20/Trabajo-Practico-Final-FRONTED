@@ -6,7 +6,9 @@
     background-color: #242626;
     border-radius: 30px;
     padding-left: 20px;
+    color:white;
 }
+
 .label-write-message{
     visibility: hidden;
 }
