@@ -1,7 +1,7 @@
 import React from 'react'
 import Message from '../Message/Message'
 
-const MessageList = ({messages}) =>{
+const MessageList = ({messages, deleteMessageById}) =>{
   console.log(messages)
   const lista_mensajes = messages.map(
     (message) => {
@@ -13,6 +13,7 @@ const MessageList = ({messages}) =>{
         id = {message.id} 
         texto = {message.texto} 
         status={message.status}
+        deleteMessageById = {deleteMessageById}
         />
       )
   })

@@ -20,21 +20,7 @@
     
     
 } 
-.button-delete{
-    color:red;
-    font-size: 20px;
-    
-}
-.button-deleteContact{
-    background-color: transparent;
-    border: none;
-    cursor:pointer;
-    position: absolute;
-    top:35px;
-    left: 360px;
-    
-    
-}
+
 .profile-photo-container{
     
     height: 100%;

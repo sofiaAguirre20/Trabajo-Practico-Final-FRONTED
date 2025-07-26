@@ -7,8 +7,10 @@
      display: flex;
      flex-direction: column;
      align-items: end;
+     
      padding-bottom: 10px;
      border: none;
+     position: relative;
      
      
 }
@@ -30,4 +32,17 @@
 .time{
     text-align: end;
     font-size: 10px;
+}
+.button-delete{
+    color:red;
+    font-size: 25px;
+    
+}
+.button-deleteMessage{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    position: absolute;
+    
+    
 }

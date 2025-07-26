@@ -1,7 +1,7 @@
 import React from 'react'
 import './ContactItem.css'
 import { Link } from 'react-router';
-import ICONS from '../../Constants/Icons';
+
 
 
 const ContactItem = ({ contact }) => {
@@ -12,7 +12,7 @@ const ContactItem = ({ contact }) => {
         <Link to={`/contact/${contact.id}/messages`} className='contact' >
 
             <div className='contact'>
-                <button className='button-deleteContact'><ICONS.DeleteContact className='button-delete'/></button>
+              
                 <div className='name-contact-container'>
                     <span>{contact.name}</span>
                 </div>

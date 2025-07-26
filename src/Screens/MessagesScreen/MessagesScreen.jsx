@@ -53,9 +53,11 @@ const MessagesScreen =()=>{
            
             
             {
-                setMessages && <MessageList messages = {messages}/> 
+                setMessages && <MessageList messages = {messages} deleteMessageById={deleteMessageById}/> 
+                
+
             }
-             
+           
             {/*<button onClick = {() => deleteMessageById(1)}>Eliminar Mensaje</button>*/}
             {/* <NewMessageForm addNewMessage={addNewMessage}/> */}
            

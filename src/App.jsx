@@ -23,10 +23,10 @@ function App() {
             <Route
             path='/' element={<ContactItem/>}
             />
-            {/* <Route
+            <Route
               path='/contact/:contact_id/messages' 
               element={<MessagesScreen/>}
-            /> */}
+            />
             
 
         </Routes> 
