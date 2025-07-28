@@ -13,7 +13,7 @@ const NewMessageForm = ({addNewMessage}) => {
 
     const handleKeyDown = (event) => {
       if (event.key === 'Enter') {
-        // Aquí puedes ejecutar la lógica deseada cuando se presiona Enter
+        
         console.log('Se presionó Enter');
       }
   };
@@ -25,7 +25,7 @@ const NewMessageForm = ({addNewMessage}) => {
                 <input type='text' onKeyDown={handleKeyDown} placeholder='Escribe un mensaje' id='message' name='message' required />  
                 
               </div> 
-              {/* <button type='submit'>Enviar mensaje</button> */}
+             
     </form> 
           
   )

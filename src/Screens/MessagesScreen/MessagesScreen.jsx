@@ -48,19 +48,20 @@ const MessagesScreen =()=>{
 		cloned_messages_list.push(new_mesage)
 		setMessages(cloned_messages_list)
 	}
-
     
+
     return(
         <div className='chat-container'>
            
             
             {
-                setMessages && <MessageList messages = {messages} deleteMessageById={deleteMessageById}/> 
+                setMessages && <MessageList messages = {messages} deleteMessageById={deleteMessageById} /> 
                 
 
             }
            
-            {/*<button onClick = {() => deleteMessageById(1)}>Eliminar Mensaje</button>*/}
+            
+
              <NewMessageForm addNewMessage={addNewMessage}/>
         
            

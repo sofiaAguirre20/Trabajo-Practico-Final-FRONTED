@@ -13,15 +13,16 @@ function App() {
   return (
       <div className='container'>
           <SideBarContacts/> 
-          <NoContactSelected/>
+         
          <Routes>
-           
+            
             <Route
               path='/'
-              element={<SideBarContacts/>}
+              element={ <NoContactSelected/>}
             />
             <Route
-            path='/' element={<ContactItem/>}
+            path='/MessageScreen' element={<ContactItem/>}
+            
             />
             <Route
               path='/contact/:contact_id/messages' 
