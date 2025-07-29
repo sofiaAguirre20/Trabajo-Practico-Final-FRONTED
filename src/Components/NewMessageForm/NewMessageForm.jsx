@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewMessageForm.css'
 
+
 const NewMessageForm = ({addNewMessage}) => {
 
     const handleSubmitSendMessageForm = (event) =>{
@@ -17,10 +18,10 @@ const NewMessageForm = ({addNewMessage}) => {
         console.log('Se presionó Enter');
       }
   };
-
+  
   return (
     <form onSubmit={handleSubmitSendMessageForm}>
-              <div className='write-message-container'>
+              <div className='write-message-container' >
                 <label htmlFor='message' className='label-write-message'>Escribe mensaje:</label>
                 <input type='text' onKeyDown={handleKeyDown} placeholder='Escribe un mensaje' id='message' name='message' required />  
                 

@@ -3,7 +3,7 @@
 .img-container{
     background-image: url("../../images/fondo-wpp.png");
     width: 100%;
-    height: 100vh;
+    
    border-top: solid 1px #3b3c3c;
    
     /* visibility: hidden */

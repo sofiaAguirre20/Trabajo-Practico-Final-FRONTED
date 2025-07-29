@@ -15,6 +15,7 @@ const MessagesScreen =()=>{
 
 	
     const [messages, setMessages] = useState([])
+
     useEffect(
         ()=>{
             setMessages(contact_selected.messages)
@@ -37,7 +38,7 @@ const MessagesScreen =()=>{
         const minutes = fechaActual.getMinutes();
 		const new_mesage = {
 			emisor: 'YO',
-			hora: [hour,minutes], 
+			hora: [`${hour}:${minutes}`], 
 			texto: text,
 			status: 'no-visto',
 			id: messages.length + 1
@@ -52,15 +53,11 @@ const MessagesScreen =()=>{
 
     return(
         <div className='chat-container'>
-           
-            
             {
                 setMessages && <MessageList messages = {messages} deleteMessageById={deleteMessageById} /> 
                 
 
             }
-           
-            
 
              <NewMessageForm addNewMessage={addNewMessage}/>
         
