@@ -58,7 +58,6 @@
 
 .message-container.other-message {
 
-    background-color: #1d1f1f;
     justify-content: flex-start;
    
 
@@ -68,19 +67,26 @@
 
 .message-container.my-message {
 
-    background-color: #125740;
     justify-content: flex-end;
  
 
 }
 
-.message {
+.my-message-data {
     color: white;
     padding: 8px;
     border-radius: 8px;
+    background-color: pink;
     
 }
 
+.other-message-data {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: green;
+    
+}
 
 .button-delete {
     color: red;
