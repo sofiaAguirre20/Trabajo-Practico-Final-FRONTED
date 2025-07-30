@@ -6,7 +6,7 @@ import { getContactList } from '../../services/contactServices'
 const ContactScreen = () => {
 
   const contacts = getContactList()
-    // const [contactsState, setContactsState] = useState(list_contacts);
+    
     
   return (
     <div>
