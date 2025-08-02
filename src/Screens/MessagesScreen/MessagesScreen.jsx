@@ -70,11 +70,11 @@ const MessagesScreen = () => {
         
             <div className='chat-container'>
                 <MessageHeader contactData =  {contactData}/>
-                {
-                    setContactData && <MessageList messages={contactData.messages} deleteMessageById={deleteMessageById} />
+                
+                <MessageList messages={contactData.messages} deleteMessageById={deleteMessageById} />
 
 
-                }
+                
 
                 <NewMessageForm addNewMessage={addNewMessage} />
 
