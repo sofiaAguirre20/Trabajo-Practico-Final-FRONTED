@@ -15,7 +15,7 @@ const contacts = [
                 status: 'visto'
             },
             {
-                emisor: 'EL',
+                emisor: 'OTRO',
                 hora: '23:11',
                 id: 2,
                 texto: 'Todo bien, vos?',
@@ -46,7 +46,7 @@ const contacts = [
                 status: 'visto'
             },
             {
-                emisor: 'ELLA',
+                emisor: 'OTRO',
                 hora: '23:11',
                 id: 2,
                 texto: 'Buenaassss',
@@ -77,7 +77,7 @@ const contacts = [
                 status: 'visto'
             },
             {
-                emisor: 'EL',
+                emisor: 'OTRO',
                 hora: '23:11',
                 id: 2,
                 texto: 'holuu',

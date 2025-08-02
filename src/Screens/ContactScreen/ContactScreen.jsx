@@ -9,9 +9,9 @@ const ContactScreen = () => {
     
     
   return (
-    <div>
-        <div><ContactsList contacts={contacts}/></div>
-    </div>
+    
+      <div><ContactsList contacts={contacts}/></div>
+    
   )
 }
 

@@ -25,7 +25,7 @@ const NewMessageForm = ({ addNewMessage }) => {
       <form onSubmit={handleSubmitSendMessageForm}>
         <div className='write-message-container' >
           <label htmlFor='message' className='label-write-message'>Escribe mensaje:</label>
-          <input type='text' onKeyDown={handleKeyDown} placeholder='Escribe un mensaje' id='message' name='message' required />
+          <input type='text' onKeyDown={handleKeyDown} placeholder='Escribe un mensaje' id='message' name='message' autoComplete='off'required />
           <button type='submit' className='button-send-message-container'><ICONS.sendMessage className='button-send-message' /></button>
         </div>
 

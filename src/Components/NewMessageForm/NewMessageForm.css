@@ -8,13 +8,16 @@
 #message {
     width: 100%;
     height: 50px;
-
     border: none;
     background-color: #242626;
     border-radius: 30px;
     padding-left: 20px;
     color: white;
 
+
+}
+#message:focus {
+  outline: none;
 }
 
 .button-send-message-container {
@@ -34,6 +37,7 @@
 
 .button-send-message {
     font-size: 18px;
+    cursor: pointer;
 }
 
 .label-write-message {

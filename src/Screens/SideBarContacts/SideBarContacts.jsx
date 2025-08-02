@@ -2,6 +2,7 @@ import React from 'react'
 import ContactScreen from '../ContactScreen/ContactScreen'
 import './SideBarContacts.css'
 import ICONS from '../../Constants/Icons'
+import FilteredContact from '../../Components/FilteredContact/FilteredContact'
 
 
 
@@ -14,7 +15,7 @@ const SideBarContacts = () => {
               <div>
                 <h2 className='logo'>WhatsApp</h2>
               </div>
-             
+              <FilteredContact/>
               <ContactScreen/>
 
               
