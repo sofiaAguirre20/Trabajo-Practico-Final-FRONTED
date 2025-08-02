@@ -18,7 +18,7 @@ const MessagesScreen = () => {
     console.log("esto es contact_id: ", contact_selected)
 
 
-    const [messages, setMessages] = useState(contact_selected.messages)
+   // const [messages, setMessages] = useState(contact_selected.messages)
     const [contactData,setContactData] = useState(contact_selected)
 
     
@@ -34,13 +34,15 @@ const MessagesScreen = () => {
 
     const deleteMessageById = (message_id) => {
         const new_message_list = []
-        for (const message of messages) {
+        for (const message of contactData.messages) {
             if (message.id !== message_id) {
                 new_message_list.push(message)
             }
         }
 
-        setMessages(new_message_list)
+        const _contactData = { ...contactData, messages: new_message_list }
+
+        setContactData(_contactData)
     }
 
     const addNewMessage = (text) => {
@@ -55,10 +57,12 @@ const MessagesScreen = () => {
             id: messages.length + 1
         }
 
-        const cloned_messages_list = [...messages]
+        const cloned_messages_list = [...contactData.messages]
 
-        cloned_messages_list.push(new_mesage)
-        setMessages(cloned_messages_list)
+        cloned_messages_list.push(new_mesage);
+
+        const _contactData = { ...contactData, messages: cloned_messages_list }
+        setContactData(_contactData)
     }
 
 
@@ -67,7 +71,7 @@ const MessagesScreen = () => {
             <div className='chat-container'>
                 <MessageHeader contactData =  {contactData}/>
                 {
-                    setMessages && <MessageList messages={messages} deleteMessageById={deleteMessageById} />
+                    setContactData && <MessageList messages={contactData.messages} deleteMessageById={deleteMessageById} />
 
 
                 }
