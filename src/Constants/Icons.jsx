@@ -1,9 +1,11 @@
-import { RiDeleteBin7Line } from "react-icons/ri";
+import { AiFillDelete } from "react-icons/ai";
 import { IoPersonAddOutline } from "react-icons/io5";
+import { IoSend } from "react-icons/io5";
 
 const ICONS = {
-    DeleteContact: RiDeleteBin7Line,
-    AddContact: IoPersonAddOutline
+    DeleteContact: AiFillDelete,
+    AddContact: IoPersonAddOutline,
+    sendMessage: IoSend
 }
 
 export default ICONS

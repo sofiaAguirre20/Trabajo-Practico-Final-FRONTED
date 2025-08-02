@@ -5,26 +5,27 @@ import { getContactById } from '../../services/contactServices'
 import '../../Components/Message/Message.css'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import SideBarContacts from '../SideBarContacts/SideBarContacts'
+import MessageHeader from '../../Components/MessageHeader/MessageHeader'
 
-const MessagesScreen =()=>{
-    
-    const {contact_id} = useParams()
+const MessagesScreen = () => {
 
-	
-	const contact_selected = getContactById(contact_id)
+    const { contact_id } = useParams()
 
-	
+
+    const contact_selected = getContactById(contact_id)
+
+
     const [messages, setMessages] = useState([])
 
     useEffect(
-        ()=>{
+        () => {
             setMessages(contact_selected.messages)
-        },[contact_id])
+        }, [contact_id])
 
     const deleteMessageById = (message_id) => {
         const new_message_list = []
-        for(const message of messages){
-            if(message.id !== message_id){
+        for (const message of messages) {
+            if (message.id !== message_id) {
                 new_message_list.push(message)
             }
         }
@@ -33,37 +34,41 @@ const MessagesScreen =()=>{
     }
 
     const addNewMessage = (text) => {
-		 const fechaActual = new Date();
+        const fechaActual = new Date();
         const hour = fechaActual.getHours();
         const minutes = fechaActual.getMinutes();
-		const new_mesage = {
-			emisor: 'YO',
-			hora: [`${hour}:${minutes}`], 
-			texto: text,
-			status: 'no-visto',
-			id: messages.length + 1
-		}
-		
-		const cloned_messages_list = [...messages]
-		
-		cloned_messages_list.push(new_mesage)
-		setMessages(cloned_messages_list)
-	}
-    
+        const new_mesage = {
+            emisor: 'YO',
+            hora: [`${hour}:${minutes}`],
+            texto: text,
+            status: 'no-visto',
+            id: messages.length + 1
+        }
 
-    return(
-        <div className='chat-container'>
-            {
-                setMessages && <MessageList messages = {messages} deleteMessageById={deleteMessageById} /> 
-                
+        const cloned_messages_list = [...messages]
 
-            }
+        cloned_messages_list.push(new_mesage)
+        setMessages(cloned_messages_list)
+    }
 
-             <NewMessageForm addNewMessage={addNewMessage}/>
+
+    return (
         
-           
-        </div>
+            <div className='chat-container'>
+                <MessageHeader />
+                {
+                    setMessages && <MessageList messages={messages} deleteMessageById={deleteMessageById} />
+
+
+                }
+
+                <NewMessageForm addNewMessage={addNewMessage} />
+
+
+            </div>
         
+
+
     )
 }
 

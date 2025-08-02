@@ -89,6 +89,76 @@ const contacts = [
                 id: 3,
                 texto: 'Que onda?',
                 status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 4,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 5,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 6,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 7,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 8,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 9,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 10,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 11,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 12,
+                texto: 'Que onda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '23:12',
+                id: 13,
+                texto: 'Que onda?',
+                status: 'visto'
             }
         ]
     }

@@ -32,7 +32,11 @@ const MessageList = ({messages, deleteMessageById}) =>{
       )
   })
 
-  return (lista_mensajes)
+  return (
+    <div className='message-body'>
+      {lista_mensajes}
+    </div>
+  )
 }
 
 export default MessageList
