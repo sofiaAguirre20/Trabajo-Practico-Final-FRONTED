@@ -15,17 +15,15 @@ const MessagesScreen = () => {
 
     
     const contact_selected = getContactById(contact_id)
-
-
-
-   // const [messages, setMessages] = useState(contact_selected.messages)
     const [contactData,setContactData] = useState(contact_selected)
+    const [messages, setMessages] = useState(contact_selected.messages)
+    
 
     
     useEffect(
         () => {
             
-          //  setMessages(contact_selected.messages)
+           setMessages(contact_selected.messages)
            setContactData(contact_selected)
 
         }, [contact_id])
@@ -33,36 +31,24 @@ const MessagesScreen = () => {
 
 
     const deleteMessageById = (message_id) => {
-        const new_message_list = []
-        for (const message of contactData.messages) {
-            if (message.id !== message_id) {
-                new_message_list.push(message)
-            }
-        }
+        const filteredMessages = messages.filter((message) => message.id !== message_id)
 
-        const contact_info = { ...contactData, messages: new_message_list }
-
-        setContactData(contact_info)
+        setMessages(filteredMessages)
     }
 
     const addNewMessage = (text) => {
         const fechaActual = new Date();
         const hour = fechaActual.getHours();
         const minutes = fechaActual.getMinutes();
-        const new_mesage = {
+        const new_message = {
             emisor: 'YO',
             hora: [`${hour}:${minutes}`],
             texto: text,
             status: 'no-visto',
-            id: contactData.messages.length + 1
+            id: messages.length + 1
         }
 
-        const cloned_messages_list = [...contactData.messages]
-
-        cloned_messages_list.push(new_mesage);
-
-        const contact_info = { ...contactData, messages: cloned_messages_list }
-        setContactData(contact_info)
+        setMessages([...messages, new_message])
     }
 
 
@@ -70,12 +56,7 @@ const MessagesScreen = () => {
         
             <div className='chat-container'>
                 <MessageHeader contactData =  {contactData}/>
-                
-                <MessageList messages={contactData.messages} deleteMessageById={deleteMessageById} />
-
-
-                
-
+                <MessageList messages={messages} deleteMessageById={deleteMessageById} />
                 <NewMessageForm addNewMessage={addNewMessage} />
 
 

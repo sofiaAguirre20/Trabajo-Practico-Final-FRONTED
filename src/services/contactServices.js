@@ -170,12 +170,8 @@ export const getContactList = () =>{
 
 export const getContactById = (contact_id) =>{
 
-    for(const contact of contacts){
-        if(Number(contact.id) === Number(contact_id)){
-            return contact
-        }
-    }
+    const contact_selected = contacts.filter((contact) => contact.id === Number(contact_id))[0]
 
-    return null
+    return contact_selected
 }
 
