@@ -54,7 +54,7 @@ const MessagesScreen = () => {
             hora: [`${hour}:${minutes}`],
             texto: text,
             status: 'no-visto',
-            id: messages.length + 1
+            id: contactData.messages.length + 1
         }
 
         const cloned_messages_list = [...contactData.messages]
