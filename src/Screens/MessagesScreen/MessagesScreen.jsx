@@ -11,11 +11,11 @@ const MessagesScreen = () => {
 
     const { contact_id } = useParams();
 
-    console.log({CONTACT_ID: contact_id});
+    
 
     
     const contact_selected = getContactById(contact_id)
-    console.log("esto es contact_id: ", contact_selected)
+    
 
 
    // const [messages, setMessages] = useState(contact_selected.messages)

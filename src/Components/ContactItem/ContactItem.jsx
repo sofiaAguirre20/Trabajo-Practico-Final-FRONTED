@@ -15,6 +15,7 @@ const ContactItem = ({ contact }) => {
               
                 <div className='name-contact-container'>
                     <span>{contact.name}</span>
+                    <span className='status'>{contact.connection_status}</span>
                 </div>
                 <div className='profile-photo-container'>
                     <img src={contact.avatar} className='profile-photo' />

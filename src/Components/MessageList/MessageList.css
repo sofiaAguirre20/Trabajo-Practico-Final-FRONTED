@@ -4,4 +4,5 @@
 .message-body{
     overflow-y:auto;
     margin-bottom: 80px;
+    padding: 10px 45px 0px 45px;
 }

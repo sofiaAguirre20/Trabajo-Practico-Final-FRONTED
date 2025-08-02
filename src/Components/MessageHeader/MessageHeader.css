@@ -10,8 +10,17 @@
     padding: 10px 0px 5px 12px;
     gap:12px
 }
+.contact-data{
+    display: flex;
+    flex-direction: column;
+}
 .contact-name{
     color:white
+
+}
+.contact-status{
+    color: white;
+    font-size: 12px;
 }
 .contact-photo{
     width: 35px;

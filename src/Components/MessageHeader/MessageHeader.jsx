@@ -5,9 +5,11 @@ const MessageHeader = ({contactData}) =>{
 
     return(
         <div className="message-header">
-            <span className="contact-name">
-                {contactData.name}
-            </span>
+            <div className='contact-data'>
+                <span className="contact-name">{contactData.name}</span>
+                <span className='contact-status'>{contactData.connection_status}</span>
+            </div>
+
             <div >
                 <img src={contactData.avatar} className="contact-photo"/>
             </div>
