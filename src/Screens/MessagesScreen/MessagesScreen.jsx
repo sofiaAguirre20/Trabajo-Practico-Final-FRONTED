@@ -11,21 +11,26 @@ const MessagesScreen = () => {
 
     const { contact_id } = useParams();
 
+    console.log({CONTACT_ID: contact_id});
+
     
+    const contact_selected = getContactById(contact_id)
+    console.log("esto es contact_id: ", contact_selected)
+
+
+    const [messages, setMessages] = useState(contact_selected.messages)
+    const [contactData,setContactData] = useState(contact_selected)
+
     
-
-
-    const [messages, setMessages] = useState([])
-    const [contactData,setContactData] = useState({})
-
     useEffect(
         () => {
-            const contact_selected = getContactById(contact_id)
-            console.log("esto es contact_id: ", contact_selected)
-            setMessages(contact_selected.messages)
-            setContactData(contact_selected)
+            
+          //  setMessages(contact_selected.messages)
+           setContactData(contact_selected)
 
         }, [contact_id])
+
+
 
     const deleteMessageById = (message_id) => {
         const new_message_list = []
