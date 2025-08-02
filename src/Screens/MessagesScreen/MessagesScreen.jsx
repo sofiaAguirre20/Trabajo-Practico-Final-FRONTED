@@ -15,7 +15,7 @@ const MessagesScreen = () => {
 
     
     const contact_selected = getContactById(contact_id)
-    
+
 
 
    // const [messages, setMessages] = useState(contact_selected.messages)
@@ -40,9 +40,9 @@ const MessagesScreen = () => {
             }
         }
 
-        const _contactData = { ...contactData, messages: new_message_list }
+        const contact_info = { ...contactData, messages: new_message_list }
 
-        setContactData(_contactData)
+        setContactData(contact_info)
     }
 
     const addNewMessage = (text) => {
@@ -61,8 +61,8 @@ const MessagesScreen = () => {
 
         cloned_messages_list.push(new_mesage);
 
-        const _contactData = { ...contactData, messages: cloned_messages_list }
-        setContactData(_contactData)
+        const contact_info = { ...contactData, messages: cloned_messages_list }
+        setContactData(contact_info)
     }
 
 
