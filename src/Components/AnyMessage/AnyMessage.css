@@ -1,0 +1,21 @@
+.any-message{
+    background-color:rgb(229, 197, 155);
+    width: 350px;
+    height: 60px;
+    padding-inline: 5px;
+    padding-block: 10px;
+    border-radius: 5px;
+
+}
+.padlock-icon{
+    color: rgb(73, 72, 72);
+    font-size: 12px;
+    text-align: center;
+    
+}
+.any-message p{
+    color: rgb(73, 72, 72);
+    font-size: 12px;
+    text-align: center;
+    
+}

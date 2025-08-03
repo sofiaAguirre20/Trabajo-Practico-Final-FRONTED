@@ -40,6 +40,12 @@
     cursor: pointer;
 }
 
+.button-send-message-container:hover{
+    
+    opacity: 0.9; 
+    border-radius: 50px;
+} 
+
 .label-write-message {
     visibility: hidden;
 }
