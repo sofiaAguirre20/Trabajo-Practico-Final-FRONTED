@@ -96,84 +96,84 @@ const contacts = [
                 emisor: 'OTRO',
                 hora: '23:11',
                 id: 2,
-                texto: 'holuu',
+                texto: 'Hola, tanto tiempo!!',
                 status: 'visto'
             },
             {
-                emisor: 'YO',
+                emisor: 'OTRO',
                 hora: '23:12',
                 id: 3,
-                texto: 'Que onda?',
+                texto: 'Como has estado?',
                 status: 'visto'
             },
             {
-                emisor: 'YO',
+                emisor: 'OTRO',
                 hora: '23:12',
                 id: 4,
-                texto: 'Que onda?',
+                texto: 'Siempre me pregunte que ha sido de ti',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 5,
-                texto: 'Que onda?',
+                texto: 'Si paso mucho!',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 6,
-                texto: 'Que onda?',
+                texto: 'Todo tranquilo, ya me recibí y ahora ya estoy trabajando',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 7,
-                texto: 'Que onda?',
+                texto: 'Vos que me contas?',
                 status: 'visto'
             },
             {
-                emisor: 'YO',
+                emisor: 'OTRO',
                 hora: '23:12',
                 id: 8,
-                texto: 'Que onda?',
+                texto: 'Por ahora estoy sin empleo',
                 status: 'visto'
             },
             {
-                emisor: 'YO',
+                emisor: 'OTRO',
                 hora: '23:12',
                 id: 9,
-                texto: 'Que onda?',
+                texto: 'Estuve buscando pero aun nada',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 10,
-                texto: 'Que onda?',
+                texto: 'Espero tener suerte',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 11,
-                texto: 'Que onda?',
+                texto: 'Si seguro',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 12,
-                texto: 'Que onda?',
+                texto: 'Yo confio que si',
                 status: 'visto'
             },
             {
                 emisor: 'YO',
                 hora: '23:12',
                 id: 13,
-                texto: 'Que onda?',
+                texto: 'Asi que confia tambien',
                 status: 'visto'
             }
         ]
