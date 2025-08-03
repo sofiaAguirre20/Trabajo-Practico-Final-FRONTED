@@ -5,17 +5,19 @@
     padding-inline: 5px;
     padding-block: 10px;
     border-radius: 5px;
-
-}
-.padlock-icon{
-    color: rgb(73, 72, 72);
-    font-size: 12px;
-    text-align: center;
     
+
 }
 .any-message p{
     color: rgb(73, 72, 72);
     font-size: 12px;
     text-align: center;
+   
+    
+}
+.padlock-icon{
+    color: rgb(73, 72, 72);
+    font-size: 12px;
+
     
 }

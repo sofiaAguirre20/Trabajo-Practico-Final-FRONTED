@@ -7,6 +7,7 @@ import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import SideBarContacts from '../SideBarContacts/SideBarContacts'
 import MessageHeader from '../../Components/MessageHeader/MessageHeader'
 
+
 const MessagesScreen = () => {
 
     const { contact_id } = useParams();
@@ -49,7 +50,12 @@ const MessagesScreen = () => {
         }
 
         setMessages([...messages, new_message])
-    }
+    } 
+
+    const DeleteAllMessages = ({setMessages}) => {
+		setMessages([])
+	}
+
 
 
     return (
@@ -58,10 +64,11 @@ const MessagesScreen = () => {
                 <MessageHeader contactData =  {contactData}/>
                 <MessageList messages={messages} deleteMessageById={deleteMessageById} />
                 <NewMessageForm addNewMessage={addNewMessage} />
+        
 
 
             </div>
-        
+            
 
 
     )

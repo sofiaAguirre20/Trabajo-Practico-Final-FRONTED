@@ -21,6 +21,9 @@ const NewMessageForm = ({ addNewMessage }) => {
     }
   };
 
+ 
+
+
   return (
     <div className='message-footer'>
       <form onSubmit={handleSubmitSendMessageForm}>
