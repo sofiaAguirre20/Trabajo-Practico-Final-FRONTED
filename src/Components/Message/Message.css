@@ -82,3 +82,17 @@
     border: none;
     cursor: pointer;
 }
+
+@media (width < 500px) {
+    .my-message-data,
+    .other-message-data {
+        max-width: 100px;
+    }
+}
+
+@media (width < 950px) {
+    .my-message-data,
+    .other-message-data {
+        max-width: 200px;
+    }
+}

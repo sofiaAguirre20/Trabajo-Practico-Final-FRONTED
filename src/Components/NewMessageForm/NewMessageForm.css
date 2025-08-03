@@ -87,9 +87,11 @@
         max-width: 50%;
     }
 
-    @media (width < 600px) {
-        .message-footer {
-            max-width: 40%;
-        }
+
+}
+
+@media (width < 600px) {
+    .message-footer {
+        max-width: 40%;
     }
 }
