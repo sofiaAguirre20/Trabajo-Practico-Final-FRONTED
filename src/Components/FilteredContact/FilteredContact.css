@@ -6,17 +6,6 @@
     
     
 }
-#filter:focus {
-  outline: none;
-}
-
-#filter:hover{
-   
-border:solid 1px gray;
- 
-    
-}
-
 #filter{
     border: none;
     width: 100%;
@@ -24,23 +13,27 @@ border:solid 1px gray;
     border-radius: 50px;
     background-color: #303131;
     padding-left: 38px;
+    color:white;
     
     
 }
 
+#filter:hover{
+   
+border:solid 1px gray;
+
+ 
+    
+}
 #filter:focus{
   outline: none;
    border:solid 2px #21a257;
    background-color: #161717;
-   color:green
+   
 
   
   
 }
-/* #filter[type="text"]{
-    color: green;
-} */
-
 
 .label-filter{
     visibility: hidden;

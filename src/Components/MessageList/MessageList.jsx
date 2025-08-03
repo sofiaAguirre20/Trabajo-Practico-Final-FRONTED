@@ -6,13 +6,6 @@ import AnyMessage from '../AnyMessage/AnyMessage'
 
 const MessageList = ({ messages, deleteMessageById }) => {
 
-/*
-  if (messages.length === 0) {
-   return(<AnyMessage/>)
-
-  }
-  */
-
   const lista_mensajes = messages.map(
     (message) => {
       return (

@@ -11,8 +11,6 @@ const FilteredContact = ({ contacts_list, contacts, setContacts }) => {
     const handleChange = (event) => {
         const { target } = event;
         const { value: nameValue } = target;
-
-        console.log('VALUEEEEEEEEEEE', nameValue);
         setInputValue(nameValue);
 
 
@@ -27,7 +25,7 @@ const FilteredContact = ({ contacts_list, contacts, setContacts }) => {
 
             })
 
-            console.log('FILTEREDDDDDDDDDDDD', filtered_contacts);
+           
 
             setContacts(filtered_contacts)
         } else {

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import MessageList from '../../Components/MessageList/MessageList'
-import { Link, NavLink, useParams } from 'react-router'
+import { useParams } from 'react-router'
 import { getContactById } from '../../services/contactServices'
 import '../../Components/Message/Message.css'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
-import SideBarContacts from '../SideBarContacts/SideBarContacts'
 import MessageHeader from '../../Components/MessageHeader/MessageHeader'
 
 

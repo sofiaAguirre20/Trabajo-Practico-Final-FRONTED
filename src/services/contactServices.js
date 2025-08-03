@@ -38,27 +38,7 @@ const contacts = [
         last_connection: 'now',
         connection_status: 'online',
         messages:[
-            {
-                emisor: 'YO',
-                hora: '23:10',
-                id: 1,
-                texto: 'Wenasss',
-                status: 'visto'
-            },
-            {
-                emisor: 'OTRO',
-                hora: '23:11',
-                id: 2,
-                texto: 'Buenaassss',
-                status: 'visto'
-            },
-            {
-                emisor: 'YO',
-                hora: '23:12',
-                id: 3,
-                texto: 'Como estas?',
-                status: 'visto'
-            }
+          
         ]
     },
     {

@@ -1,6 +1,5 @@
 import React from 'react'
 import ContactItem from '../ContactItem/ContactItem'
-import FilteredContact from '../FilteredContact/FilteredContact'
 
 
 const ContactsList = ({ contacts }) => {

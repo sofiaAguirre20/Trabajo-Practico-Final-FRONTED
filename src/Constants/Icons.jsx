@@ -3,7 +3,7 @@ import { IoPersonAddOutline } from "react-icons/io5";
 import { IoSend } from "react-icons/io5";
 import { IoMdSearch } from "react-icons/io";
 import { TbLockFilled } from "react-icons/tb";
-import { MdDeleteSweep } from "react-icons/md";
+
 
 
 const ICONS = {
@@ -12,7 +12,7 @@ const ICONS = {
     sendMessage: IoSend,
     searchContact: IoMdSearch,
     padlock: TbLockFilled,
-    deleteAllMessages: MdDeleteSweep
+   
 }
 
 export default ICONS

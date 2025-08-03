@@ -4,9 +4,6 @@ import ContactsList from '../../Components/ContactsList/ContactsList'
 
 
 const ContactScreen = ({ contacts }) => {
-
-    console.log('CONTACTSSSSSSSSSSSSSSSS')
-    console.log(contacts);
     
   return (
     
