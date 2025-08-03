@@ -11,12 +11,13 @@ const SideBarContacts = () => {
 
   const [contacts, setContacts] = useState(contacts_list);
   
+  
       return (
         <div className='chats-panel'>
               <div>
                 <h2 className='logo'>WhatsApp</h2>
               </div>
-              <FilteredContact/>
+              <FilteredContact contacts_list={contacts_list} contacts={contacts} setContacts={setContacts} />
               <ContactScreen contacts={contacts} />
 
               
