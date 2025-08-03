@@ -5,6 +5,8 @@ import { getContactById } from '../../services/contactServices'
 import '../../Components/Message/Message.css'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import MessageHeader from '../../Components/MessageHeader/MessageHeader'
+import DeleteAllMessages from '../../Components/DeleteAllMessages/DeleteAllMessages'
+
 
 
 const MessagesScreen = () => {
@@ -51,9 +53,7 @@ const MessagesScreen = () => {
         setMessages([...messages, new_message])
     } 
 
-    const DeleteAllMessages = ({setMessages}) => {
-		setMessages([])
-	}
+   
 
 
 
@@ -62,10 +62,9 @@ const MessagesScreen = () => {
             <div className='chat-container'>
                 <MessageHeader contactData =  {contactData}/>
                 <MessageList messages={messages} deleteMessageById={deleteMessageById} />
-                <NewMessageForm addNewMessage={addNewMessage} />
-        
-
-
+                <NewMessageForm addNewMessage={addNewMessage} setMessages={setMessages}/>
+                <DeleteAllMessages setMessages={setMessages}/>
+               
             </div>
             
 

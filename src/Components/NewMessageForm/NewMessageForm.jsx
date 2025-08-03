@@ -1,9 +1,10 @@
 import React from 'react'
 import './NewMessageForm.css'
 import ICONS from '../../Constants/Icons'
+import DeleteAllMessages from '../DeleteAllMessages/DeleteAllMessages'
 
 
-const NewMessageForm = ({ addNewMessage }) => {
+const NewMessageForm = ({ addNewMessage, setMessages }) => {
 
   const handleSubmitSendMessageForm = (event) => {
     event.preventDefault()
@@ -21,8 +22,6 @@ const NewMessageForm = ({ addNewMessage }) => {
     }
   };
 
- 
-
 
   return (
     <div className='message-footer'>
@@ -30,9 +29,9 @@ const NewMessageForm = ({ addNewMessage }) => {
         <div className='write-message-container' >
           <label htmlFor='message' className='label-write-message'>Escribe mensaje:</label>
           <input type='text' onKeyDown={handleKeyDown} placeholder='Escribe un mensaje' id='message' name='message' autoComplete='off'/>
-          <button type='submit' className='button-send-message-container'><ICONS.sendMessage className='button-send-message' /></button>
+          <button type='submit' className='button-send-message-container' title='Enviar mensaje' ><ICONS.sendMessage className='button-send-message' /></button>
         </div>
-
+        
       </form>
     </div>
 
