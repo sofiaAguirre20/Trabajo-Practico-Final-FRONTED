@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactScreen from '../ContactScreen/ContactScreen'
 import './SideBarContacts.css'
-import ICONS from '../../Constants/Icons'
 import FilteredContact from '../../Components/FilteredContact/FilteredContact'
-
+import { getContactList } from '../../services/contactServices'
 
 
 const SideBarContacts = () => {
 
-   
+  const contacts_list = getContactList();
+
+  const [contacts, setContacts] = useState(contacts_list);
   
       return (
         <div className='chats-panel'>
@@ -16,7 +17,7 @@ const SideBarContacts = () => {
                 <h2 className='logo'>WhatsApp</h2>
               </div>
               <FilteredContact/>
-              <ContactScreen/>
+              <ContactScreen contacts={contacts} />
 
               
         </div>
