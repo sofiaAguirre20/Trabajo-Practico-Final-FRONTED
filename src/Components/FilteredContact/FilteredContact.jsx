@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ICONS from '../../Constants/Icons'
 import './FilteredContact.css'
-import { getContactList } from '../../services/contactServices'
 
 
 
@@ -10,16 +9,18 @@ const FilteredContact = ({ contacts_list, contacts, setContacts }) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleChange = (event) => {
+        const { target } = event;
+        const { value: nameValue } = target;
 
-        console.log('VALUEEEEEEEEEEE', event.target.value);
-        setInputValue(event.target.value);
+        console.log('VALUEEEEEEEEEEE', nameValue);
+        setInputValue(nameValue);
 
 
-        // const contacts = getContactList()
+       
 
-        if (event.target.value) {
+        if (nameValue) {
             const filtered_contacts = contacts.filter((contact) => {
-                const filter_text = event.target.value;
+                const filter_text = nameValue;
                 const contact_name = contact.name
 
                 return contact_name.toLocaleLowerCase().includes(filter_text.toLowerCase().trim())
