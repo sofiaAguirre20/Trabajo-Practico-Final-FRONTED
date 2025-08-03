@@ -2,6 +2,7 @@
     width: 100%;
     padding-inline: 10px;
    
+   
     
     
     
@@ -18,21 +19,11 @@
     
 }
 
-#filter:hover{
-   
-border:solid 1px gray;
-
- 
-    
-}
 #filter:focus{
-  outline: none;
+    outline: none;
    border:solid 2px #21a257;
-   background-color: #161717;
+   background-color: #161717; 
    
-
-  
-  
 }
 
 .label-filter{
@@ -48,3 +39,6 @@ border:solid 1px gray;
     top:9px;
     left: 12px;
 }
+
+
+ 

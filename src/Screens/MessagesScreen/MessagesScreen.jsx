@@ -63,7 +63,7 @@ const MessagesScreen = () => {
                 <MessageHeader contactData =  {contactData}/>
                 <MessageList messages={messages} deleteMessageById={deleteMessageById} />
                 <NewMessageForm addNewMessage={addNewMessage} setMessages={setMessages}/>
-                <DeleteAllMessages setMessages={setMessages}/>
+              
                
             </div>
             

@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
 import Message from '../Message/Message'
 import './MessageList.css'
-import NewMessageForm from '../NewMessageForm/NewMessageForm'
 import AnyMessage from '../AnyMessage/AnyMessage'
 
 const MessageList = ({ messages, deleteMessageById }) => {

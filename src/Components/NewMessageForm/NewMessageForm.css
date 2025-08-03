@@ -16,8 +16,9 @@
 
 
 }
+
 #message:focus {
-  outline: none;
+    outline: none;
 }
 
 .button-send-message-container {
@@ -40,23 +41,55 @@
     cursor: pointer;
 }
 
-.button-send-message-container:hover{
-    
-    opacity: 0.9; 
+.button-send-message-container:hover {
+
+    opacity: 0.9;
     border-radius: 50px;
-} 
+}
 
 .label-write-message {
     visibility: hidden;
 }
 
 .message-footer {
-    position: fixed;
-    z-index: 2;
-    box-sizing: border-box;
-    flex: none;
-    order: 3;
+    position: absolute;
     width: 70%;
     padding: 0px 10px 10px 10px;
     bottom: 0px;
+}
+
+
+@media (width < 1000px) {
+
+
+    .message-footer {
+        max-width: 65%;
+    }
+}
+
+
+@media (width < 860px) {
+
+
+    .message-footer {
+        max-width: 60%;
+    }
+}
+
+@media (width < 755px) {
+    .message-footer {
+        max-width: 55%;
+    }
+}
+
+@media (width < 670px) {
+    .message-footer {
+        max-width: 50%;
+    }
+
+    @media (width < 600px) {
+        .message-footer {
+            max-width: 40%;
+        }
+    }
 }
