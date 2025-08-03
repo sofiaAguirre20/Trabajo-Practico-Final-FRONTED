@@ -1,9 +1,11 @@
 import React from 'react'
 import ContactItem from '../ContactItem/ContactItem'
+import FilteredContact from '../FilteredContact/FilteredContact'
 
 
 const ContactsList = ({ contacts }) => {
-        console.log(contacts)
+        
+
         return (
             <div>
                 {contacts.map((contact) => (

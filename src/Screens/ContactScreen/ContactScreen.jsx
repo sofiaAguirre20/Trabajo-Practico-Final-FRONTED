@@ -10,7 +10,7 @@ const ContactScreen = () => {
     
   return (
     
-      <div><ContactsList contacts={contacts}/></div>
+        <ContactsList contacts={contacts}/>
     
   )
 }

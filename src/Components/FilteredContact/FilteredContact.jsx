@@ -4,9 +4,10 @@ import { getContactList } from '../../services/contactServices'
 
 
 
-const FilteredContact = () =>{
+const FilteredContact = (contact_selected) =>{
 
-    const contacts = getContactList()
+   const contacts = getContactList()
+
     const filtered_contacts = contacts.filter((contact) => {
         const filter_text = ""
         const contact_name = contact.name

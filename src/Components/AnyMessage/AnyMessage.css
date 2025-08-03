@@ -1,14 +1,5 @@
-.any-message{
-    background-color:rgb(229, 197, 155);
-    width: 350px;
-    height: 60px;
-    padding-inline: 5px;
-    padding-block: 10px;
-    border-radius: 5px;
-    
 
-}
-.any-message p{
+.any-message-data p{
     color: rgb(73, 72, 72);
     font-size: 12px;
     text-align: center;
@@ -20,4 +11,15 @@
     font-size: 12px;
 
     
+}
+.message-container.any-message{
+    justify-content: center;
+}
+.any-message-data{
+    background-color:rgb(229, 197, 155);
+    width: 350px;
+    height: 60px;
+    padding-inline: 5px;
+    padding-block: 10px;
+    border-radius: 5px;
 }
