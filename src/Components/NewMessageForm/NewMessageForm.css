@@ -119,6 +119,7 @@
 @media (max-width: 355px) {
     .message-footer {
         max-width: 150px;
+        height: 30px;
 
 
 
