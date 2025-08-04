@@ -46,7 +46,12 @@
     }
 }
 
-
+@media (max-width: 455px){
+    .chats-panel{
+        min-width: 150px
+    }
+   
+}
  
  /* @media (1000px < width < 1141px ) {
 

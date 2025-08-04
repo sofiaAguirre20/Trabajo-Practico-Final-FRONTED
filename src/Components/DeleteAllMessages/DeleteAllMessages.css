@@ -1,5 +1,4 @@
-
-.button-delete-all-messages{
+.button-delete-all-messages {
     width: 35px;
     height: 35px;
     background-color: rgb(168, 11, 11);
@@ -8,20 +7,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position:absolute;
+    position: absolute;
     right: 60px;
     bottom: 18px;
     z-index: 2;
     cursor: pointer;
 }
 
-.icon-delete-all-messages{
+.icon-delete-all-messages {
     font-size: 25px;
-    color:white
+    color: white
 }
 
-.button-delete-all-messages:hover{
-    
-    opacity: 0.9; 
-} 
+.button-delete-all-messages:hover {
 
+    opacity: 0.9;
+}
+
+@media (max-width: 455px) {
+    .button-delete-all-messages {
+        width: 30px;
+        height: 30px;
+        right: 50px
+    }
+
+    .icon-delete-all-messages {
+        font-size: 20px;
+        
+    }
+}

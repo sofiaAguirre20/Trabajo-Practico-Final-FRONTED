@@ -57,3 +57,13 @@
         padding-left: 20px;
     }
 }
+@media (max-width: 455px){
+    #filter{
+        font-size: 8px;
+        padding-inline: 2px;
+    }
+     .search-icon {
+   
+       visibility: hidden;
+    }
+}

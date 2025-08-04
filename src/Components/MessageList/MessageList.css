@@ -34,8 +34,8 @@
     }
 } 
 
-@media (width < 455px){
+@media (max-width: 455px){
     .message-body{
-        padding-inline: 10px;
+        padding-inline: 5px;
     }
 }
