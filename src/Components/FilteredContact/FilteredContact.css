@@ -40,30 +40,33 @@
 }
 
 @media (max-width: 700px) {
-   
+
     #filter {
         font-size: 10px;
 
     }
+
     .search-icon {
-   
+
         position: absolute;
-        top:12px;
+        top: 12px;
         left: 8px;
         font-size: 9px;
     }
 
-    #filter{
+    #filter {
         padding-left: 20px;
     }
 }
-@media (max-width: 455px){
-    #filter{
+
+@media (max-width: 455px) {
+    #filter {
         font-size: 8px;
         padding-inline: 2px;
     }
-     .search-icon {
-   
-       visibility: hidden;
+
+    .search-icon {
+
+        visibility: hidden;
     }
 }

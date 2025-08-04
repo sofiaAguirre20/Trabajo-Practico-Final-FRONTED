@@ -17,19 +17,19 @@ const Message = ({ emisor, hora, id, texto, status, deleteMessageById }) => {
   }
   return (
 
-    
-      <div className={message_container_class}>
 
-        <div className={message_data}>
-          <span className='text'>{texto}</span>
-          <span className='time'>{hora}</span>
+    <div className={message_container_class}>
+
+      <div className={message_data}>
+        <span className='text'>{texto}</span>
+        <span className='time'>{hora}</span>
 
 
 
-        </div>
-        <button onClick={() => { deleteMessageById(id) }} className='button-deleteMessage-container'><ICONS.DeleteContact className='button-delete' /></button>
       </div>
-  
+      <button onClick={() => { deleteMessageById(id) }} className='button-deleteMessage-container'><ICONS.DeleteContact className='button-delete' /></button>
+    </div>
+
 
   )
 }

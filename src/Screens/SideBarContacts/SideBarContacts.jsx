@@ -10,21 +10,21 @@ const SideBarContacts = () => {
   const contacts_list = getContactList();
 
   const [contacts, setContacts] = useState(contacts_list);
-  
-  
-      return (
-        <div className='chats-panel'>
-              <div>
-                <h2 className='logo'>WhatsApp</h2>
-              </div>
-              <FilteredContact contacts_list={contacts_list} contacts={contacts} setContacts={setContacts} />
-              <ContactScreen contacts={contacts} />
 
-              
-        </div>
-    )
-  
-  
+
+  return (
+    <div className='chats-panel'>
+      <div>
+        <h2 className='logo'>WhatsApp</h2>
+      </div>
+      <FilteredContact contacts_list={contacts_list} contacts={contacts} setContacts={setContacts} />
+      <ContactScreen contacts={contacts} />
+
+
+    </div>
+  )
+
+
 }
 
 export default SideBarContacts

@@ -14,7 +14,7 @@ const FilteredContact = ({ contacts_list, contacts, setContacts }) => {
         setInputValue(nameValue);
 
 
-       
+
 
         if (nameValue) {
             const filtered_contacts = contacts.filter((contact) => {
@@ -25,7 +25,7 @@ const FilteredContact = ({ contacts_list, contacts, setContacts }) => {
 
             })
 
-           
+
 
             setContacts(filtered_contacts)
         } else {

@@ -22,7 +22,7 @@ const MessageList = ({ messages, deleteMessageById }) => {
 
   return (
     <div className='message-body'>
-      { messages.length === 0 ? <AnyMessage/> : lista_mensajes}
+      {messages.length === 0 ? <AnyMessage /> : lista_mensajes}
     </div>
   )
 }

@@ -40,42 +40,7 @@ const contacts = [
         last_connection: 'now',
         connection_status: 'online',
         messages:[
-           {
-                emisor: 'YO',
-                hora: '23:10',
-                id: 1,
-                texto: 'Hola que tal?',
-                status: 'visto'
-            },
-            {
-                emisor: 'OTRO',
-                hora: '23:11',
-                id: 2,
-                texto: 'Hola, todo bien. Como estas?',
-                status: 'visto'
-            },
-            {
-                emisor: 'YO',
-                hora: '23:12',
-                id: 3,
-                texto: 'Bien. Descansando',
-                status: 'visto'
-            },
-            {
-                emisor: 'YO',
-                hora: '23:12',
-                id: 4,
-                texto: 'Vos?',
-                status: 'visto'
-            },
-            {
-                emisor: 'OTRO',
-                hora: '23:12',
-                id: 5,
-                texto: 'Aca por ir a bañarme',
-                status: 'visto'
-            },
-           
+          
             
         ]
     },
@@ -244,14 +209,14 @@ const contacts = [
                 emisor: 'OTRO',
                 hora: '18:10',
                 id: 1,
-                texto: 'Vas a la joda?',
+                texto: 'Esta noche ire a bucar la receta secreta de la cangreburger. JAJAJAJA (risa malvada)',
                 status: 'visto'
             },
             {
                 emisor: 'OTRO',
                 hora: '18:10',
                 id: 2,
-                texto: 'Yo creo que no',
+                texto: 'Me acompañas? ;)',
                 status: 'visto'
             }
                

@@ -5,7 +5,6 @@ import { getContactById } from '../../services/contactServices'
 import '../../Components/Message/Message.css'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import MessageHeader from '../../Components/MessageHeader/MessageHeader'
-import DeleteAllMessages from '../../Components/DeleteAllMessages/DeleteAllMessages'
 
 
 
@@ -13,20 +12,20 @@ const MessagesScreen = () => {
 
     const { contact_id } = useParams();
 
-    
 
-    
+
+
     const contact_selected = getContactById(contact_id)
-    const [contactData,setContactData] = useState(contact_selected)
+    const [contactData, setContactData] = useState(contact_selected)
     const [messages, setMessages] = useState(contact_selected.messages)
-    
 
-    
+
+
     useEffect(
         () => {
-            
-           setMessages(contact_selected.messages)
-           setContactData(contact_selected)
+
+            setMessages(contact_selected.messages)
+            setContactData(contact_selected)
 
         }, [contact_id])
 
@@ -51,22 +50,22 @@ const MessagesScreen = () => {
         }
 
         setMessages([...messages, new_message])
-    } 
+    }
 
-   
+
 
 
 
     return (
-        
-            <div className='chat-container'>
-                <MessageHeader contactData =  {contactData}/>
-                <MessageList messages={messages} deleteMessageById={deleteMessageById} />
-                <NewMessageForm addNewMessage={addNewMessage} setMessages={setMessages}/>
-              
-               
-            </div>
-            
+
+        <div className='chat-container'>
+            <MessageHeader contactData={contactData} />
+            <MessageList messages={messages} deleteMessageById={deleteMessageById} />
+            <NewMessageForm addNewMessage={addNewMessage} setMessages={setMessages} />
+
+
+        </div>
+
 
 
     )

@@ -1,9 +1,9 @@
 import './MessageHeader.css'
-const MessageHeader = ({contactData}) =>{
+const MessageHeader = ({ contactData }) => {
 
 
 
-    return(
+    return (
         <div className="message-header">
             <div className='contact-data'>
                 <span className="contact-name">{contactData.name}</span>
@@ -11,7 +11,7 @@ const MessageHeader = ({contactData}) =>{
             </div>
 
             <div >
-                <img src={contactData.avatar} className="contact-photo"/>
+                <img src={contactData.avatar} className="contact-photo" />
             </div>
         </div>
     )

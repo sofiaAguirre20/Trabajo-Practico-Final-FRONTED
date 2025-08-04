@@ -12,7 +12,7 @@ const ContactItem = ({ contact }) => {
         <Link to={`/contact/${contact.id}/messages`} className='contact' >
 
             <div className='contact'>
-              
+
                 <div className='name-contact-container'>
                     <span>{contact.name}</span>
                     <span className='status'>{contact.connection_status}</span>

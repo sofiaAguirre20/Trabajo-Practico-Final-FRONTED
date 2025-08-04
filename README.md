@@ -16,15 +16,12 @@ Es una aplicacion que simula el funcionamiento de la aplicación web de Whatsapp
     "react-dom",
     "react-icons",
     "react-router"
-  },
+  }
+  
 -DevDependencies: {
-    "@eslint/js",
     "@types/react",
     "@types/react-dom",
     "@vitejs/plugin-react",
-    "eslint",
-    "eslint-plugin-react-hooks",
-    "eslint-plugin-react-refresh",
     "globals",
     "vite"
   }
