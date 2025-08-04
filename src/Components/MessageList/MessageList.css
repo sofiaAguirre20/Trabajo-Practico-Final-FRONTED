@@ -27,4 +27,9 @@
     background-color: transparent;
 }
 
- 
+@media (width < 600px) {
+    .message-body {
+        padding-inline: 20px;
+        
+    }
+} 
