@@ -33,3 +33,9 @@
         
     }
 } 
+
+@media (width < 455px){
+    .message-body{
+        padding-inline: 10px;
+    }
+}

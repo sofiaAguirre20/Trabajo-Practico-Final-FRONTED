@@ -39,10 +39,10 @@
     left: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
    
     #filter {
-        font-size: 9px;
+        font-size: 10px;
 
     }
     .search-icon {

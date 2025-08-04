@@ -76,33 +76,22 @@
     }
 }
 
-@media (width < 755px) {
+@media (max-width: 755px) {
     .message-footer {
         max-width: 55%;
     }
 }
 
-@media (width < 670px) {
-    .message-footer {
-        max-width: 50%;
-    }
 
-
-}
-
-@media (max-width < 600px) {
-    .message-footer {
-        max-width: 40%;
-    }
-    #message{
-        font-size: 10px;
-       
-    }
-}
-
-@media (max-width:490px){
+@media (max-width:480px){
     .message-footer {
         max-width: 250px;
+        padding-left: 0;
+    }
+    #message{
+        padding-left: 5px;
+       
     }
 
 }
+

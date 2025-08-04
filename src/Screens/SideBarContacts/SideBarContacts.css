@@ -29,7 +29,7 @@
         
     }
 }
-@media (width < 600px) {
+@media (width < 700px) {
    .chats-panel{
         min-width: 200px;
         padding-inline: 0;
