@@ -50,7 +50,10 @@
     .chats-panel{
         min-width: 150px
     }
-   
+     #message::placeholder{
+        visibility: hidden;
+       
+    }
 }
  
  /* @media (1000px < width < 1141px ) {
