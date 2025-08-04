@@ -1,9 +1,11 @@
+const img = document.createElement('img');
+
 const contacts = [
     {
         id:1,
-        name: 'Bob Esponja',
+        name: 'Bob',
         description: 'yo esponja',
-        avatar: 'https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/master/w_1600,c_limit/bob_esponja_9564.png',
+        avatar: img.src = '../../images/bob.png',
         last_connection: '15:23',
         connection_status: 'offline',
         messages:[
@@ -34,7 +36,7 @@ const contacts = [
         id:2,
         name: 'Arenita',
         description: 'yo arenita',
-        avatar: 'https://i.pinimg.com/736x/45/c4/d0/45c4d0f51f99e2a4700ce6ee3a72f635.jpg',
+        avatar: img.src = '../../images/arenita.png',
         last_connection: 'now',
         connection_status: 'online',
         messages:[
@@ -81,7 +83,7 @@ const contacts = [
         id:3,
         name: 'Patricio',
         description: 'yo patricio',
-        avatar: 'https://imagenes.heraldo.es/files/image_990_556/uploads/imagenes/2020/08/11/la-estrella-de-mar-patricio-sera-el-protagonista-del-spin-of-de-bob-esponja.jpeg',
+        avatar: img.src = '../../images/pat.png',
         last_connection: '15:25',
         connection_status: 'offline',
         messages:[
@@ -170,7 +172,93 @@ const contacts = [
                 status: 'visto'
             }
         ]
-    }
+    },
+     {
+        id:4,
+        name: 'Señor Cangrejo',
+        description: 'yo Cangrejo',
+        avatar: img.src = '../../images/cangrejo.png',
+        last_connection: 'now',
+        connection_status: 'online',
+        messages:[
+           {
+                emisor: 'YO',
+                hora: '10:29',
+                id: 1,
+                texto: 'No te olvides de llevar la coca',
+                status: 'visto'
+            },
+            {
+                emisor: 'OTRO',
+                hora: '11:11',
+                id: 2,
+                texto: 'si si',
+                status: 'visto'
+            },
+           
+            
+        ]
+    },
+     {
+        id:5,
+        name: 'Calamardo',
+        description: 'yo Calamardo',
+        avatar: img.src = '../../images/calamardo.png',
+        last_connection: 'now',
+        connection_status: 'online',
+        messages:[
+           {
+                emisor: 'OTRO',
+                hora: '15:16',
+                id: 1,
+                texto: 'Ya completaste el formulario?',
+                status: 'visto'
+            },
+            {
+                emisor: 'YO',
+                hora: '16:30',
+                id: 2,
+                texto: 'Sip',
+                status: 'visto'
+            },
+            {
+                emisor: 'OTRO',
+                hora: '16:30',
+                id: 3,
+                texto: 'Vos?',
+                status: 'no visto'
+            },
+           
+            
+        ]
+    },
+     {
+        id:6,
+        name: 'Plankton',
+        description: 'yo Plankton',
+        avatar: img.src = '../../images/plankton.png',
+        last_connection: 'now',
+        connection_status: 'online',
+        messages:[
+           {
+                emisor: 'OTRO',
+                hora: '18:10',
+                id: 1,
+                texto: 'Vas a la joda?',
+                status: 'visto'
+            },
+            {
+                emisor: 'OTRO',
+                hora: '18:10',
+                id: 2,
+                texto: 'Yo creo que no',
+                status: 'visto'
+            }
+               
+           
+            
+        ]
+    },
 ];
 
 export const getContactList = () =>{

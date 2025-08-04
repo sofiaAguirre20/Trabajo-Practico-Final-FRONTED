@@ -1,6 +1,6 @@
 ## Whatsapp Clone
 
-Es una aplicacion que simula el funcionamiento de la aplicación web de Whatsapp.
+Es una aplicacion que simula el funcionamiento de la aplicación web de Whatsapp. Donde se maneja el flujo de los mensajes y contactos. Tiene las funcionalidades básicas de eliminar y enviar mensajes. También cuenta con un filtro de contactos.
 
 ## Tecnologías usadas
 
@@ -11,9 +11,29 @@ Es una aplicacion que simula el funcionamiento de la aplicación web de Whatsapp
 
 
 ## Librerias:
+-Dependencies: {
+    "react",
+    "react-dom",
+    "react-icons",
+    "react-router"
+  },
+-DevDependencies: {
+    "@eslint/js",
+    "@types/react",
+    "@types/react-dom",
+    "@vitejs/plugin-react",
+    "eslint",
+    "eslint-plugin-react-hooks",
+    "eslint-plugin-react-refresh",
+    "globals",
+    "vite"
+  }
 
-react-icons
+-react-icons
 
 ## Aprendizaje:
 
-Me costo mucho implementar el hook useState() de React Router
+Me costo mucho implementar: 
+-El hook useState() y useParams() de React Router
+-Los métodos filter y map
+-EL responsive

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router'
  import MessagesScreen from './Screens/MessagesScreen/MessagesScreen'
  import ContactItem from './Components/ContactItem/ContactItem'
